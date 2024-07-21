@@ -1,21 +1,33 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
     padding: 0;
+    overflow: hidden; /* Prevent scrollbars from appearing */
 }
+
+html, body {
+    height: 100%;
+}
+
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
 }
+
 img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Ensures the image covers the viewport without distortion */
 }
+
 .footer {
-    margin-top: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 14px;
     color: #555;
 }
