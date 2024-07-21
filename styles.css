@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevent scrollbars from appearing */
+    overflow: hidden; 
 }
 
 html, body {
@@ -13,14 +13,14 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     margin: 0;
 }
 
 img {
-    width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */
-    object-fit: cover; /* Ensures the image covers the viewport without distortion */
+    width: 100vw; 
+    height: 100vh;
+    object-fit: cover; 
 }
 
 .footer {
